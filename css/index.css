@@ -1,14 +1,27 @@
 #main-images {
     margin-top: 7em;
     text-align: center;
-    height: auto;
+    height: 500px;
 }
 
-img {
-    height: 25em;
+#main-images img {
+	width: 50%;
 }
 
 #content {
     margin-top: 1em;
     margin-bottom: 5em;
+}
+
+@media (max-width: 729px) {
+	
+	#main-images {
+		margin-top: 7em;
+		text-align: center;
+		height: 200px;
+	}
+	
+	#main-images img {
+		width: 100%;
+	}
 }

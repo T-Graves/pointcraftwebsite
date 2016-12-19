@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pointcraft Countertops</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <head>
+        <title>Pointcraft Custom Countertops</title>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
         <script src="js/unslider.js"></script>
         <script src="js/main-images.js"></script>
         <script src="js/revision-mark.js"></script>
@@ -12,44 +15,101 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/unslider.css" />
         <link rel="stylesheet" type="text/css" href="css/unslider-dots.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
 
     <body>
+	
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
 
         <section>
             <ul id="nav-bar">
-                <li id="logo"><img src="images/pointcraft_nav-bar.jpg" alt="Pointcraft Custom Countertops LLC" /></li>
-                <li class="active nav-item"><a href="index">Home</a></li>
-                <li class="nav-item"><a href="contact">Contact us</a></li>
-                <li class="nav-item"><a href="about">About</a></li>
-                <li class="nav-item"><a href="gallery">Gallery</a></li>
+                <li id="logo"><img src="img/pointcraft_nav-bar.jpg" alt="Pointcraft Custom Countertops LLC" /></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="/">Home</a></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="contact">Contact Us</a></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="about">About</a></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="gallery">Gallery</a></li>
             </ul>
         </section>
 
         <section id="main-images">
-            <ul>
+            <ul id="image-container">
                 <li>
-                    <img src="images/counter_3_crop.png" alt="counter image 3"/>
+                    <img src="img/counter_3_crop.png" alt="counter image 3"/>
                 </li>
                 <li>
-                    <img src="images/counter_4_crop.jpg" alt="counter image 4"/>
+                    <img src="img/counter_4_crop.jpg" alt="counter image 4"/>
                 </li>
                 <li>
-                    <img src="images/counter_9_crop.png" alt="counter image 9"/>
+                    <img src="img/counter_9_crop.png" alt="counter image 9"/>
+                </li>
+				<li>
+                    <img src="img/counter_15.jpg" alt="counter image 15"/>
                 </li>
             </ul>
         </section>
 
         <section id="content">
 
-            <p>This website is a work in progress. Please excuse the lack of information on this page. Contact info for Pointcraft Custom Countertops can be found under the "Contact Us" tab.</p>
-
-            <div>
-
-            </div>
+            <h4 class="list-head">Products and Services</h4>
+            <ul class="list-content-left">
+				<li>All counter tops are custom designed to fit the customers specific needs.</li>
+				<li>We offer both laminate and solid surface counter tops.</li>
+				<li>We can build the tops with wood or routed edging and a wide variety of laminate and solid surface colors and designs.</li>
+				<li>We will fit any type of sink desired.</li>
+            </ul>
+			
+			<h4 class="list-head">Why Choose Us?</h4>
+			<ul>
+				<li>Family owned and operated</li>
+				<li>Knowledgeable employees</li>
+				<li>Locally operated since 1999</li>
+				<li>Attentive to detail. We make sure every counter top is exactly what the customer wants.</li>
+				<li>We can help customers contact local Amish cabinet makers.</li>
+			</ul>
         </section>
 
         <section id="footer-section">
         </section>
+		
+		<!--
+			--PreLoadMe license--
+			The MIT License (MIT)
+
+			Copyright (c) 2016 Niklaus Gerber
+
+			Permission is hereby granted, free of charge, to any person obtaining a copy
+			of this software and associated documentation files (the "Software"), to deal
+			in the Software without restriction, including without limitation the rights
+			to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+			copies of the Software, and to permit persons to whom the Software is
+			furnished to do so, subject to the following conditions:
+
+			The above copyright notice and this permission notice shall be included in all
+			copies or substantial portions of the Software.
+
+			THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+			IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+			FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+			AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+			LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+			OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+			SOFTWARE.
+
+		-->
+
+		<script type="text/javascript">
+			//<![CDATA[
+				$(window).load(function() { // makes sure the whole site is loaded
+					$('#status').fadeOut(); // will first fade out the loading animation
+					$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+					$('body').delay(350).css({'overflow':'visible'});
+				})
+			//]]>
+		</script>
+		
     </body>
 </html>

@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <head>
-        <title>Pointcraft Countertops - About</title>
+        <title>Pointcraft Custom Countertops - About</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="js/revision-mark.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/main-css.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
 
     <body>
+	
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">&nbsp;</div>
+		</div>
+	
         <section>
             <ul id="nav-bar">
-                <li id="logo"><img src="images/pointcraft_nav-bar.jpg" alt="Pointcraft Custom Countertops LLC" /></li>
-                <li class="nav-item"><a href="index">Home</a></li>
-                <li class="nav-item"><a href="contact">Contact us</a></li>
-                <li class="active nav-item"><a href="about">About</a></li>
-                <li class="nav-item"><a href="gallery">Gallery</a></li>
+                <li id="logo"><img src="img/pointcraft_nav-bar.jpg" alt="Pointcraft Custom Countertops LLC" /></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="/">Home</a></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="contact">Contact Us</a></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="about">About</a></li>
+                <li class="nav-item hvr-sweep-to-top"><a href="gallery">Gallery</a></li>
             </ul>
         </section>
 
         <section id="content">
-            <p>About page</p>
+            <p>
+			Pointcraft Custom Counter Tops was founded in 1999 by Charlie Loomis and has rapidly grown ever since. 
+			We are a family-owned business that serves Southern Wisconsin including areas such as 
+			Madison, Dodgeville, Baraboo, Reedsburg, Richland Center, Sparta, Janesville, and many more.
+			We work closely with our customers to design and fabricate counter tops for any layout.
+			</p>
+			<p>We are located just outside of Hill Point Wisconsin.</p>
+			<div class="google-maps-container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.568385678641!2d-90.11483218451022!3d43.406949979130566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fd8dd55c29d565%3A0xf8d443dc33ae3a97!2sHillpoint+Rd%2C+Hill+Point%2C+WI+53937!5e0!3m2!1sen!2sus!4v1469933144422" 
+						width="600" 
+						height="450" 
+						frameborder="0" 
+						style="border:0" 
+						allowfullscreen>
+				</iframe>
+			</div>
         </section>
 
         <section id="footer-section">
         </section>
+		
+		<!--
+			--PreLoadMe license--
+			The MIT License (MIT)
+
+			Copyright (c) 2016 Niklaus Gerber
+
+			Permission is hereby granted, free of charge, to any person obtaining a copy
+			of this software and associated documentation files (the "Software"), to deal
+			in the Software without restriction, including without limitation the rights
+			to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+			copies of the Software, and to permit persons to whom the Software is
+			furnished to do so, subject to the following conditions:
+
+			The above copyright notice and this permission notice shall be included in all
+			copies or substantial portions of the Software.
+
+			THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+			IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+			FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+			AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+			LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+			OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+			SOFTWARE.
+
+		-->
+
+		<script type="text/javascript">
+			//<![CDATA[
+				$(window).load(function() { // makes sure the whole site is loaded
+					$('#status').fadeOut(); // will first fade out the loading animation
+					$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+					$('body').delay(350).css({'overflow':'visible'});
+				})
+			//]]>
+		</script>
+		
     </body>
 </html>

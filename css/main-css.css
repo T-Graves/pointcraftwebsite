@@ -1,75 +1,226 @@
-body {
-    margin: 0;
-    background-color: #999999;
+@media(min-width: 730px) {
+	body   {
+		margin: 0;
+		background-color: #999999;
+	}
+
+	ul#nav-bar   {
+		list-style-type: none;
+		margin: 0;
+		padding-left: 1em;
+		overflow: hidden;
+		background-color: #ffffff;
+		border-bottom: 1px solid #000000;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	ul   li#logo   img   {
+		float: right;
+		height: 85px;
+		padding-top: 5px;
+		padding-right: 1em;
+		border-right: 1px solid #bbbbbb;
+	}
+
+	li.nav-item   {
+		float: left;
+		height: 90px;
+	}
+
+	li   a   {
+		display: block;
+		height: 90px;
+		width: 100px;
+		padding-top: 3em;
+		text-align: center;
+		color: black;
+		font-size: 20px;
+		text-decoration: none;
+	}
+
+	/* Hover animation for nav buttons */
+	/*
+	The MIT License (MIT)
+
+	Copyright (c) 2014-2015 Ian Lunn
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+	*/
+
+	.hvr-sweep-to-top {
+	  display: inline-block;
+	  vertical-align: middle;
+	  -webkit-transform: translateZ(0);
+	  transform: translateZ(0);
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	  -webkit-backface-visibility: hidden;
+	  backface-visibility: hidden;
+	  -moz-osx-font-smoothing: grayscale;
+	  position: relative;
+	  -webkit-transition-property: color;
+	  transition-property: color;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	}
+	.hvr-sweep-to-top:before {
+	  content: "";
+	  position: absolute;
+	  z-index: -1;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background: #f7f7f7;
+	  -webkit-transform: scaleY(0);
+	  transform: scaleY(0);
+	  -webkit-transform-origin: 50% 100%;
+	  transform-origin: 50% 100%;
+	  -webkit-transition-property: transform;
+	  transition-property: transform;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-timing-function: ease-out;
+	  transition-timing-function: ease-out;
+	}
+	.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+	  color: white;
+	}
+	.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+	  -webkit-transform: scaleY(1);
+	  transform: scaleY(1);
+	}
+
+	#content   {
+		clear: both;
+		width: 85%;
+		margin: auto;
+		margin-top: 7em;
+		padding: .5em 1em .5em 1em;
+		background-color: #ffffff;
+	}
+
+	#footer-section   {
+		border-top: 1px solid black;
+		background-color: #333333;
+		color: white;
+		text-align: right;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 900;
+	}
+
+	#footer-section   p   {
+		margin-right: 1em;
+		font-size: 12px;
+	}
+
+	.list-head   {
+		margin: 0em;
+		background-color: #f3f3f3;
+	}
 }
 
-ul#nav-bar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    border-bottom: 1px solid #000000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+@media (max-width: 729px) {
+	body   {
+		margin: 0;
+		background-color: #999999;
+	}
 
-ul li#logo img{
-    float: left;
-    height: 85px;
-    padding-top: 5px;
-    padding-left: 5px;
-    border-right: 1px solid #bbbbbb;
-}
+	ul#nav-bar   {
+		list-style-type: none;
+		margin: 0;
+		padding-left: 1em;
+		overflow: hidden;
+		background-color: #ffffff;
+		border-bottom: 1px solid #000000;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
 
-li.nav-item{
-    float: left;
-    height: 90px;
-    border-right: 1px solid #bbbbbb;
-}
+	ul   li#logo   img   {
+		float: right;
+		height: 40px;
+		padding-top: 5px;
+		padding-right: 1em;
+		border-right: 1px solid #bbbbbb;
+	}
 
-li a {
-    display: block;
-    height: 90px;
-    width: 100px;
-    padding: 25% 16px;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-}
+	li.nav-item   {
+		float: left;
+		height: 45px;
+		padding: .2em;
+	}
 
-li a:hover {
-    background-color: #555555;
-}
+	li   a   {
+		display: block;
+		height: 45px;
+		padding-top: 1em;
+		padding-right: .2em;
+		text-align: center;
+		color: black;
+		font-size: 15px;
+		text-decoration: none;
+	}
+	
+	li.nav-item:hover {
+		border-bottom: 2px solid #777777;
+	}
+	
+	#content   {
+		clear: both;
+		width: 85%;
+		margin: auto;
+		margin-top: 7em;
+		padding: .5em 1em .5em 1em;
+		background-color: #ffffff;
+	}
 
-.active {
-    background-color: forestgreen;
-}
+	#footer-section   {
+		border-top: 1px solid black;
+		background-color: #333333;
+		color: white;
+		text-align: right;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 900;
+	}
 
-#content {
-    clear: both;
-    width: 85%;
-    margin: auto;
-    margin-top: 7em;
-    padding: 0 1em 0 1em;
-    border: 1px solid black;
-    background-color: #ffffff;
-}
+	#footer-section   p   {
+		margin-right: 1em;
+		font-size: 10px;
+	}
 
-#footer-section {
-    border-top: 1px solid black;
-    background-color: #333333;
-    color: white;
-    text-align: right;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+	.list-head   {
+		margin: 0em;
+		background-color: #f3f3f3;
+	}
+	
+	.google-maps-container   {
+		position: relative;
+		padding-bottom: 75%;
+		height: 0;
+		overflow: hidden;
+		margin-bottom: 25%;
+	}
 
-#footer-section p {
-    margin-right: 1em;
-    font-size: 12px;
+	.google-maps-container iframe   {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
 }

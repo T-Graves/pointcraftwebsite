@@ -1,3 +1,5 @@
 $(document).ready(function ($) {
-    $('#main-images').unslider();
+    $('#main-images').unslider({
+		animation: 'fade'
+	});
 });

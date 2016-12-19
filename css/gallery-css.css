@@ -1,0 +1,17 @@
+div#lightgallery   {
+	margin: 1em;
+	margin-bottom: 5em;
+}
+
+div#lightgallery   a   {
+	margin: .5em;
+	text-decoration: none;
+}
+
+div#lightgallery   a   img.tall-image   {
+	width: 10%;
+}
+
+div#lightgallery   a   img   {
+	width: 31%;
+}
